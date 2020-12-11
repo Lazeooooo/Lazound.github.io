@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!-- my CSS -->
+      <link rel="stylesheet" href="css/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <title>Lazound.ID</title>
+    </head>
+
+    <body id="home">
+
+      <!-- navbar -->
+      <div class="navbar-fixed">
+        <nav class="grey darken-1">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo">LAZOUND.ID</a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="klien.html">Clients</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="kontak.html">Contact us</a></li>
+              </ul>
+              </div>
+          </div>
+        </nav>
+      </div>
+            
+        <!-- sidenav-->
+        <ul class="sidenav" id="mobile-nav">
+           <li><a href="about.html">About us</a></li>
+           <li><a href="klien.html">Clients</a></li>
+           <li><a href="service.html">Services</a></li>
+           <li><a href="portofolio.html">Portofolio</a></li>
+           <li><a href="kontak.html">Contact us</a></li>
+        </ul>
+
+        <!-- slider -->
+        <div class="slider">
+    <ul class="slides">
+       <li>
+        <img src="img/slider/4.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>What are you looking for?</h3> <!--apa yang kamu cari-->
+          <h5 class="light white-text text-lighten-3"> I may be able to help</h5><!--aku mungkin bisa membantu-->
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    <!-- services -->
+     <section id="services" class="services grey lighten-3">
+      <div class="container">
+        <div class="row">
+          <h3 class="light center black-text darken-3">Our Services</h3>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+              <i class="material-icons medium">collections</i>
+              <h5>Logo Design</h5>
+              <p>Jasa Design Logo dengan tampilan efektif dan mempunyai makna dari setiap desain, 
+                  dengan harga terjangkau mempermudah dan mempercantik kebutuhan desain logo anda.</p>
+            </div>
+          </div>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+              <i class="material-icons medium">personal_video</i>
+              <h5>Web Design</h5>
+              <p>jangan takut dengan design web yang itu itu saja. kami dapat membuat design web anda menjadi lebih menarik dan mempunyai makna sendiri.</p>
+            </div>
+          </div>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+              <i class="material-icons medium">desktop_windows</i>
+              <h5>Web Development</h5>
+              <p>Zaman sekarang belum mempunyai website? jangan takut kami siap membantu, Dikerjakan oleh tim profesional dilakukan dengan cepat dan teliti dengan tampilan yang menarik.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section id="services" class="services grey lighten-3">
+      <div class="container">
+        <div class="row">
+          <div class="col m4 s12">
+            <div class="card-panel center">
+             <i class="material-icons medium">ondemand_video</i>
+              <h5>Video Editor</h5>
+              <p>Kami menyediakan layanan editor yang dapat membuat video anda menjadi lebih menarik, dengan tampilan yang lebih bewarna.</p>
+            </div>
+          </div>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+              <i class="material-icons medium">computer</i>
+              <h5>Content Writer</h5>
+              <p>konten apa yang kalian butuhkan ? kami siap membantu membuat konten yang menarik dengan keinginan kalian tentunya.</p>
+            </div>
+          </div>
+          <div class="col m4 s12">
+            <div class="card-panel center">
+               <i class="material-icons medium">accessibility</i>
+              <h5>Personal Branding</h5>
+              <p>Kami siap membantu membranding diri anda sedemikian yang kalian dengan prospek dan progres yang jelas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--konsultasi-->
+    <section >
+      <div class="container">
+      <h5 class="center">KONSULTASI</h5>
+            <p class="center" >Lazound.ID memberikan layanan free konsultasi untuk kalian para konsumen hal ini supaya para konsumen mendapatkan hasil yang terbaik. untuk melakukan konsultasi lebih lanjut silahkan hubungi kontak yang sudah tersedia.</p>
+      </div>
+    </section>
+
+    <!-- footer -->
+       <div class="footer-copyright grey darken-2">
+           <div class="container">
+            Lazound.ID - &copy Copyright 2020
+            <a class="grey-text text-lighten-4 right" href="#!">Lazound56@gmail.com</a>
+           </div>
+        </div>
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        const slider = document.querySelector('.slider');
+        M.Slider.init(slider, {
+          indicators: false,
+          height: 500,
+          transition: 600,
+          interval: 3000
+          });
+
+        const parallax = document.querySelector('.parallax');
+        M.Parallax.init(parallax, {});
+
+        const materialbox = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialbox);
+      </script>
+    </body>
+  </html>
+        
+
+
+
+
+
+

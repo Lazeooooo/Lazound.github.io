@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!-- my CSS -->
+      <link rel="stylesheet" href="css/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <title>Lazound.ID</title>
+    </head>
+
+    <body id="home">
+
+      <!-- navbar -->
+      <div class="navbar-fixed">
+        <nav class="grey darken-1">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo">LAZOUND.ID</a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="klien.html">Clients</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="kontak.html">Contact us</a></li>
+              </ul>
+              </div>
+          </div>
+        </nav>
+      </div>
+            
+        <!-- sidenav-->
+        <ul class="sidenav" id="mobile-nav">
+           <li><a href="about.html">About us</a></li>
+           <li><a href="klien.html">Clients</a></li>
+           <li><a href="service.html">Services</a></li>
+           <li><a href="portofolio.html">Portofolio</a></li>
+           <li><a href="kontak.html">Contact us</a></li>
+        </ul>
+
+        <!-- slider -->
+        <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/slider/7.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>ABOUT US</h3>
+          <h5 class="light grey-text text-lighten-3">Lazound.ID</h5>
+        </div>
+      </li>
+       <li>
+        <img src="img/slider/5.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>TENTANG KAMI</h3>
+          <h5 class="light grey-text text-lighten-3">Temukan yang kalian inginkan!</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    <!-- About us -->
+    <section class="about grey lighten-3">
+      <div class="container">
+        <div class="row">
+          <h3 class="center light grey-text text-darken-3">About us</h3>
+          <div class="col m6 text-lighten-3">
+            <h5>We Are Profesionals</h5>
+             <p>Lazound.ID  adalah Perusahaan yang bergerak pada Bidang Jasa untuk membantu kebutuhan yang dibutuhkan konsumen.
+            <p>kami Terdiri dari Tim yang sudah berpegalaman dalam bidangnya dan sudah
+            menjalani kerja sama dengan perorangan, beberapa instansi dan Beberapa
+            perusahaan Besar diIndonesia</p>
+          </div>
+          <div class="col m6 light">
+            <p>LOGO DESIGN</p>
+            <div class="progress">
+             <div class="determinate  blue darken-4" style="width: 100%"></div>
+            </div>
+            <p>WEB DESIGN</p>
+            <div class="progress">
+             <div class="determinate  blue darken-4" style="width: 100%"></div>
+            </div>
+            <p>WEB DEVELOPMENT</p>
+            <div class="progress">
+             <div class="determinate  blue darken-4" style="width: 100%"></div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section >
+      <div class="container">
+      <h5 class="center">VISI</h5>
+            <p class="center" >Menjadi Perusahaan di bidang Jasa teknologi di indonesia yang dapat mempermudah pekerjaan klien serta dapat membantu klien dengan cepat</p>
+             <h5 class="center">MISI</h5>
+            <p class="center">Menjadikan perusahaan terbaik pada bidang teknologi. Menghadirkan pelayanan dengan sistem operasional yang terbaik bagi setiap klien. Meningkatkan standar keamanan pangan yang sudah ada lebih ekstensif. </p>
+      </div>
+    </section>
+
+    <section class="grey lighten-3">
+      <div class="container">
+        <h3 class="center light grey-text text-darken-3"></h3>
+          <p><strong>Sejarah Lazound.ID</strong></p>
+          <p>Sejarah terbentuk nya kami yaitu sebelum muncul nya covid 19 kami sudah berencana untuk membuka lapangan pekerjaan dan juga ingin mengembangkan keahlian kami dengan cara bergerak di bidang jasa ini, akan tetapi muncul nya covid membuat kami mendirikan perusahaan lebih cepat dari sebelumnya, hal ini dikarenakan banyak nya pekerjaan ataupun tugas yang dikerjakan secara online karena banyak pekerja atau mahasiswa yang belajar dan bekerja via daring dari situlah terbentuk nya <strong>LAZOUND.ID</strong> pada bulan juni 2020.</p>
+          <p><strong>Prestasi Lazound.ID</strong></p>
+          <p>Kami dipercayai untuk membranding sebuah account instagram yaitu "Celoteh Orang" mulai dari logo serta tampilan feed instagram dan juga instastory.</p>
+        
+      </div>
+    </section>
+
+ <!-- footer -->
+       <div class="footer-copyright grey darken-3">
+            <div class="container">
+            Lazound.ID - &copy Copyright 2020
+            <a class="grey-text text-lighten-4 right" href="#!">Lazound56@gmail.com</a>
+            </div>
+          </div>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        const slider = document.querySelector('.slider');
+        M.Slider.init(slider, {
+          indicators: false,
+          height: 500,
+          transition: 600,
+          interval: 3000
+          });
+
+        const parallax = document.querySelector('.parallax');
+        M.Parallax.init(parallax, {});
+
+        const materialbox = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialbox);
+      </script>
+    </body>
+  </html>
+        
+
+
+
+
+
+
